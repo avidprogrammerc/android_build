@@ -102,7 +102,8 @@ LOCAL_DISABLE_STRICT := \
 	libiprouteutil \
 	fio \
 	tcpdump \
-	libmmcamera_interface
+	libmmcamera_interface \
+	libwifi-service
 
 LOCAL_FORCE_DISABLE_STRICT := \
 	libziparchive-host \
@@ -133,7 +134,8 @@ LOCAL_FORCE_DISABLE_STRICT := \
 	libiprouteutil \
 	fio \
 	tcpdump \
-	libmmcamera_interface
+	libmmcamera_interface \
+	libwifi-service
 
 DISABLE_STRICT := \
 	-fno-strict-aliasing
