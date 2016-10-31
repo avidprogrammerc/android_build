@@ -132,11 +132,11 @@ function check_product()
     fi
 
     if (echo -n $1 | grep -q -e "^aosp_") ; then
-       CUSTOM_BUILD=
+       FLASH_BUILD=
     else
-       CUSTOM_BUILD=$1
+       FLASH_BUILD=$1
     fi
-    export CUSTOM_BUILD
+    export FLASH_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_BUILD_VARIANT= \
@@ -581,7 +581,7 @@ function breakfast()
     local variant=$2
     CUSTOM_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
-    for f in `/bin/ls vendor/custom/vendorsetup.sh 2> /dev/null`
+    for f in `/bin/ls vendor/flash/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
             . $f
