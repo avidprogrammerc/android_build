@@ -1382,7 +1382,7 @@ class BlockDifference(object):
     if not self.src:
       # write the output unconditionally
       script.Print(" ")
-      script.Print("Flashing System..")
+      script.Print("Flashing Flash ROM...")
     else:
       script.Print("Patching %s image after verification." % (self.partition,))
 
