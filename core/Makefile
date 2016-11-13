@@ -1899,15 +1899,15 @@ bacon: otapackage
 	@echo -e ""
 	@echo -e ""
 	@echo -e ""
-	@echo -e ${CL_YLW}"   _|_|_|_|"${CL_RED}"  _|      "${CL_YLW}"    _|_|  "${CL_RED}"    _|_|_| "${CL_YLW}" _|    _|"${CL_RED}"      _|_|_|  "${CL_YLW}"    _|_|  "${CL_RED}"  _|      _|  "${CL_RST}
-	@echo -e ${CL_YLW}"   _|      "${CL_RED}"  _|      "${CL_YLW}"  _|    _|"${CL_RED}"  _|       "${CL_YLW}" _|    _|"${CL_RED}"      _|    _|"${CL_YLW}"  _|    _|"${CL_RED}"  _|_|  _|_|  "${CL_RST}
-	@echo -e ${CL_YLW}"   _|_|_|  "${CL_RED}"  _|      "${CL_YLW}"  _|_|_|_|"${CL_RED}"    _|_|   "${CL_YLW}" _|_|_|_|"${CL_RED}"      _|_|_|  "${CL_YLW}"  _|    _|"${CL_RED}"  _|  _|  _|  "${CL_RST}
-	@echo -e ${CL_YLW}"   _|      "${CL_RED}"  _|      "${CL_YLW}"  _|    _|"${CL_RED}"        _| "${CL_YLW}" _|    _|"${CL_RED}"      _|    _|"${CL_YLW}"  _|    _|"${CL_RED}"  _|      _|  "${CL_RST}
-	@echo -e ${CL_YLW}"   _|      "${CL_RED}"  _|_|_|_|"${CL_YLW}"  _|    _|"${CL_RED}"  _|_|_|   "${CL_YLW}" _|    _|"${CL_RED}"      _|    _|"${CL_YLW}"    _|_|  "${CL_RED}"  _|      _|  "${CL_RST}
+	@echo -e ${CL_RED}"   _|_|_|_|"${CL_YLW}"  _|      "${CL_RED}"    _|_|  "${CL_YLW}"    _|_|_| "${CL_RED}" _|    _|"${CL_YLW}"      _|_|_|  "${CL_RED}"    _|_|  "${CL_YLW}"  _|      _|  "${CL_RST}
+	@echo -e ${CL_RED}"   _|      "${CL_YLW}"  _|      "${CL_RED}"  _|    _|"${CL_YLW}"  _|       "${CL_RED}" _|    _|"${CL_YLW}"      _|    _|"${CL_RED}"  _|    _|"${CL_YLW}"  _|_|  _|_|  "${CL_RST}
+	@echo -e ${CL_RED}"   _|_|_|  "${CL_YLW}"  _|      "${CL_RED}"  _|_|_|_|"${CL_YLW}"    _|_|   "${CL_RED}" _|_|_|_|"${CL_YLW}"      _|_|_|  "${CL_RED}"  _|    _|"${CL_YLW}"  _|  _|  _|  "${CL_RST}
+	@echo -e ${CL_RED}"   _|      "${CL_YLW}"  _|      "${CL_RED}"  _|    _|"${CL_YLW}"        _| "${CL_RED}" _|    _|"${CL_YLW}"      _|    _|"${CL_RED}"  _|    _|"${CL_YLW}"  _|      _|  "${CL_RST}
+	@echo -e ${CL_RED}"   _|      "${CL_YLW}"  _|_|_|_|"${CL_RED}"  _|    _|"${CL_YLW}"  _|_|_|   "${CL_RED}" _|    _|"${CL_YLW}"      _|    _|"${CL_RED}"    _|_|  "${CL_YLW}"  _|      _|  "${CL_RST}
 	@echo -e ""
 	@echo -e ""
 	@echo -e ""
-	@echo -e ${CL_YLW}"ZIP: $(CUSTOM_TARGET_PACKAGE)"
+	@echo -e ${CL_RED}"ZIP: $(CUSTOM_TARGET_PACKAGE)"
 	@echo -e "SIZE: "`ls -hal $(CUSTOM_TARGET_PACKAGE) | cut -d ' ' -f 5`
 	@echo -e "MD5: "`cat $(CUSTOM_TARGET_PACKAGE).md5sum | cut -d ' ' -f 1`
 	@echo -e ""${CL_RST}
